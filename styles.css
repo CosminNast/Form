@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(229, 109, 109);
+    background-image: url("./images/bg-intro-desktop.png");
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+input{
+    font-size: 35px;
+}
+
+button{
+    
+    padding:16px;
+    background-color: rgb(80, 206, 80);
+    color: white;
+}
+
+.first{
+    background-color: rgb(87, 87, 155);
+    color: white;
+}
+
+.container{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.container button, form{
+    border-radius: 10px;
+}
+
+.container form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container a{
+    color: red;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+.container button{
+    padding:16px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 20px;
+}
+
+.content h1,h4{
+    color: white;
+}
+
+.content h1{
+    font-size: 45px;
+}
+
+.content h4{
+    font-size: 20px;
+}
+
+.parent{
+    display: flex;
+    /* min-height: 100vh; */
+    
+    width: 100%;
+    max-width: 1110px;
+}
+
+@media(max-width:600px){
+    .parent{
+        flex-direction: column;
+    }
+}
